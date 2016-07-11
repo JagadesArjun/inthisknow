@@ -1,0 +1,136 @@
+.activity-container {
+    margin: 10;
+    border-color : #ffedb1;
+    border-width: 1;
+    border-radius: 5;
+    padding: 5;
+}
+
+.activity-name {
+    color: #FFE06A;
+    margin: 5 0;
+}
+
+.activity-summary {
+    margin: 5 0;
+    font-size: 13;
+}
+
+.activity-date {
+    margin: 5 5 5 0;
+    color: #B0B0B0;
+    font-size: 13;
+}
+
+.activity-avatar {
+    width: 50;
+    height: 50;
+    margin: 10 10 20 15;
+    vertical-align: top;
+    border-radius: 4;
+}
+
+.activity-avatar2 {
+    width: 50;
+    height: 40;
+    margin: 10 10 20 15;
+    vertical-align: top;
+    border-radius: 4;
+}
+
+.activity-picture {
+    margin: 10 0;
+    vertical-align: top;
+    border-radius:4;
+}
+
+.activity-list{
+    border-color : #dfdfdf;
+    border-width: 0;
+}
+.layout-container {
+    margin: 6;
+}
+
+.btn-red {
+    background-color: #9A1813;
+    margin: 6;
+}
+
+.btn-lightblue {
+    background-color: #4695D9;
+    margin: 6;
+}
+
+.btn-lightgreen {
+    background-color: #049A90;
+    margin: 6;
+}
+
+.btn-yellow {
+    background-color: #CED910;
+    margin: 6;
+}
+
+.btn-blue {
+    background-color: #1719C0;
+    margin: 6;
+}
+
+
+.ios-tab-view {
+    background-color: white;
+    color: #929292;
+}
+
+.android-tab-view {
+    background-color: white;
+    color: black;
+    box-shadow: white;
+}
+
+.iconone {
+    font-family: 'icomoon';
+    font-size: 48;
+}
+.sideDrawerHeader {
+    background-color: #FAC950;
+    padding: 16 0 16 0;
+    margin-bottom: 8;
+}
+.sideDrawerProfilePictureContainer {
+    margin-bottom: 16;
+    horizontal-align: center;
+}
+
+.sideDrawerLabel {
+    horizontal-align: center;
+    color: black;
+}
+.profilePicture {
+    horizontal-align: center;
+    vertical-align: center;
+}
+.recipeTitle{
+    font-size: 19
+}
+
+.recipeAuthor{
+    font-style: italic
+}
+
+.recipeSub{
+    margin-top: 10;
+    font-style: 14;
+}
+
+.option{
+    margin-bottom: 8;
+    margin-top: 8;
+}
+
+.signup-button-two{
+    margin:0 15 15 15;
+    background-color: #FFE06A;
+    color: #ffffff;
+}

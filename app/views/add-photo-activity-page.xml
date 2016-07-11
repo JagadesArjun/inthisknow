@@ -1,0 +1,35 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo" actionBarHidden="true">
+    <GridLayout rows="auto,auto,auto, *">
+        <GridLayout cssClass="header-container" columns="auto, *, auto">
+            <Image src="~/res/back.png" tap="backButtonClicked" cssClass="header-button align-left android"/>
+            <Label text="Add PhotoAct" cssClass="header-context-label align-left android" col="1"/>
+        </GridLayout>
+        <GridLayout
+                row="1"
+                cssClass="detailsContainer"
+                padding="8 16 8 16"
+                columns="auto, *, auto"
+                tap="takePictureButtonTap">
+            <Image
+                    src="~/res/ic_photo.png"
+                    cssClass="detailsIcon"
+                    stretch="none"/>
+            <Label
+                    text="Tap to add photo"
+                    cssClass="newtext"
+                    col="1"
+                    margin="0 0 0 4"/>
+            <Image
+                    col="2"
+                    stretch="fill"
+                    src="{{picture}}"
+                    visibility="{{picture ? 'visible' : 'collapsed'}}"
+                    cssClass="picturePreview"/>
+        </GridLayout>
+        <TextView text="{{ activity }}" id="add-activity-text" row="2" textWrap="true" height="100"
+                  cssClass="text-input"/>
+        <Image rowSpan="4" src="~/res/done.png" stretch="fill" id="add-activity" tap="addActivity"
+               cssClass="fab fabContainer android"/>
+        <ActivityIndicator rowSpan="4" busy="{{ isLoading }}" cssClass="activity-indicator"/>
+    </GridLayout>
+</Page>

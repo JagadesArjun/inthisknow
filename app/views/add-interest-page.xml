@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo" actionBarHidden="true">
+    <GridLayout rows="auto,auto,auto, *">
+        <GridLayout cssClass="header-container" columns="auto, *, auto">
+            <Image src="~/res/back.png" tap="backButtonClicked" cssClass="header-button align-left android"/>
+            <Label text="Add Interest" cssClass="header-context-label align-left android" col="1"/>
+        </GridLayout>
+        <TextView text="{{ activity }}" id="add-activity-text" row="2" textWrap="true" height="100"
+                  cssClass="text-input"/>
+        <Image rowSpan="4" src="~/res/done.png" stretch="fill" id="add-activity" tap="addActivity"
+               cssClass="fab fabContainer android"/>
+        <ActivityIndicator rowSpan="4" busy="{{ isLoading }}" cssClass="activity-indicator"/>
+    </GridLayout>
+</Page>

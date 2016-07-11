@@ -1,0 +1,138 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="pageNavigatingTo" actionBarHidden="true">
+    <TabView
+            selectedIndex="{{selectedIndex}}"
+            tabsBackgroundColor="#ffffff"
+            android:cssClass="android-tab-view"
+            android:selectedColor="#FFE06A">
+        <TabView.items>
+            <TabViewItem
+                    iconSource="~/res/feed.png"
+                    navigateTo="pageNavigateTo">
+                <TabViewItem.view>
+                    <StackLayout orientation="vertical">
+                        <ListView id="activitiesView" items="{{ activities }}" itemTap="onActivityTap" row="2">
+                            <ListView.itemTemplate>
+                                <GridLayout columns="auto, *">
+                                    <StackLayout>
+                                        <Image src="{{ avatarImageSource || defaultAvatarImageSource }}" stretch="fill"
+                                               cssClass="activity-avatar"/>
+                                        <Image src="{{ '~/res/'+Type+'.png' }}" stretch="fill"
+                                               cssClass="activity-avatar2"/>
+                                    </StackLayout>
+                                    <StackLayout cssClass="activity-container" col="1">
+                                        <Label cssClass="activity-name">
+                                            <Label.formattedText>
+                                                <FormattedString>
+                                                    <FormattedString.spans>
+                                                        <Span text="{{ userName }}" fontAttributes="Bold"/>
+                                                    </FormattedString.spans>
+                                                </FormattedString>
+                                            </Label.formattedText>
+                                        </Label>
+                                        <Label text="{{ Text }}" cssClass="activity-summary" textWrap="true"/>
+                                        <Image src="{{ pictureImageSource || '' }}" width="150" cssClass="activity-picture android"
+                                               stretch="aspectFit"/>
+                                        <Label text="{{ CreatedAt, CreatedAt | dateConverter('DD.MM.YYYY') }}"
+                                               cssClass="activity-date"/>
+                                    </StackLayout>
+                                </GridLayout>
+                            </ListView.itemTemplate>
+                        </ListView>
+                        <ActivityIndicator rowSpan="3" busy="{{ isLoading }}" cssClass="activity-indicator"/>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem
+                    iconSource="~/res/pencil.png"
+                    navigateTo="pageNavigateTo">
+                <TabViewItem.view>
+                    <StackLayout orientation="vertical">
+                        <ListView id="activitiesView" items="{{ listimage }}" itemTap="connectone" row="2">
+                            <ListView.itemTemplate>
+                                <GridLayout columns="auto, *">
+                                    <Image src="{{ '~/res/'+photo }}" cssClass="option" horizontalAlignment="stretch"
+                                           height="100"/>
+                                    <GridLayout verticalAlignment="bottom">
+                                        <StackLayout backgroundColor="#BBFFFFFF"
+                                                     paddingTop="8"
+                                                     paddingBottom="8"
+                                                     paddingLeft="16"
+                                                     paddingRight="16">
+                                            <Label text="{{title}}"
+                                                   cssClass="recipeTitle"/>
+                                        </StackLayout>
+                                    </GridLayout>
+                                </GridLayout>
+                            </ListView.itemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem
+                    iconSource="~/res/bundleusers.png"
+                    navigateTo="pageNavigateTo">
+                <TabViewItem.view>
+                    <StackLayout orientation="vertical">
+                        <ListView id="activitiesView" items="{{ active }}" itemTap="onActivityNewTap" row="2">
+                            <ListView.itemTemplate>
+                                <GridLayout columns="auto, *" cssClass="activity-list">
+                                    <StackLayout>
+                                        <Image src="{{ avatarImageSource || defaultAvatarImageSource }}" stretch="fill"
+                                               cssClass="activity-avatar"/>
+                                    </StackLayout>
+                                    <StackLayout cssClass="activity-container" col="1">
+                                        <Label cssClass="activity-name">
+                                            <Label.formattedText>
+                                                <FormattedString>
+                                                    <FormattedString.spans>
+                                                        <Span text="{{ userName }}" fontAttributes="Bold"/>
+                                                    </FormattedString.spans>
+                                                </FormattedString>
+                                            </Label.formattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </GridLayout>
+                            </ListView.itemTemplate>
+                        </ListView>
+                        <ActivityIndicator rowSpan="3" busy="{{ isLoading }}" cssClass="activity-indicator"/>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem
+                    iconSource="~/res/userone.png"
+                    navigateTo="pageNavigateTo">
+                <TabViewItem.view>
+                    <ListView id="activitiesView"
+                              items="{{profileone}}"
+                              row="2">
+                        <ListView.itemTemplate>
+                            <GridLayout
+                                    rows="*"
+                                    columns="*"
+                                    marginBottom="2"
+                                    marginRight="2"
+                                    backgroundColor="{{bc}}">
+                                <image cssClass="option" horizontalAlignment="stretch"
+                                       src="{{ avatarImageSource || defaultAvatarImageSource }}"/>
+                                <GridLayout verticalAlignment="bottom">
+                                    <StackLayout
+                                            backgroundColor="#BBFFFFFF"
+                                            paddingTop="8"
+                                            paddingBottom="8"
+                                            paddingLeft="16"
+                                            paddingRight="16">
+                                        <Label text="{{username}}" cssClass="recipeTitle"/>
+                                        <Label text="{{'Email: '+Email}}" cssClass="recipeSub"/>
+                                        <Label text="{{ 'About: '+about}}" cssClass="recipeSub"/>
+                                        <Button text="Settings" id="signup" tap="enablenotify"
+                                                cssClass="signup-button-two"/>
+                                    </StackLayout>
+                                </GridLayout>
+                            </GridLayout>
+                        </ListView.itemTemplate>
+                    </ListView>
+                </TabViewItem.view>
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
+</Page>

@@ -1,0 +1,17 @@
+.sideDrawerHeader {
+    background-color: #FAC950;
+    padding: 16 0 16 0;
+    margin-bottom: 8;
+}
+.sideDrawerProfilePictureContainer {
+    margin-bottom: 16;
+    horizontal-align: center;
+}
+
+.sideDrawerLabel {
+    horizontal-align: center;
+}
+.profilePicture {
+    horizontal-align: center;
+    vertical-align: center;
+}

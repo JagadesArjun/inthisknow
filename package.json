@@ -1,0 +1,21 @@
+{
+  "nativescript": {
+    "id": "com.know.Friends",
+    "tns-ios": {
+      "version": "2.0.0"
+    },
+    "tns-android": {
+      "version": "2.1.1"
+    }
+  },
+  "dependencies": {
+    "nativescript-push-notifications": ">=0.0.10",
+    "tns-core-modules": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.10.4",
+    "babel-types": "6.11.1",
+    "babylon": "6.8.2",
+    "lazy": "1.0.11"
+  }
+}

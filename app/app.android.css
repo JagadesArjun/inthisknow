@@ -1,0 +1,213 @@
+Page {
+    background-color: #ffffff;
+}
+
+.ios {
+    visibility: collapsed;
+}
+
+.header-container {
+    background-color: white;
+    box-shadow: white;
+}
+
+.align-right {
+    horizontal-align: right;
+}
+
+.align-left {
+    horizontal-align: left;
+}
+
+.align-center {
+    horizontal-align: center;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.header-button {
+    height: 30;
+    width: 30;
+    margin: 10;
+}
+
+.header-context-label {
+    vertical-align: middle;
+    font-size: 20;
+    margin:17 20 20 0;
+    color: #FFE06A;
+}
+
+.text-input {
+    margin: 10 15 10 15;
+    padding: 5;
+    height: 50;
+}
+.text-input:focus {
+    outline:none;
+}
+.text-input-new{
+    margin: 10 15 10 15;
+    padding: 5;
+}
+.text-input-new:focus {
+    outline:none;
+}
+.signup-button{
+    margin:0 15 15 15;
+    background-color: #FFE06A;
+    color: #ffffff;
+}
+
+.login-button {
+    margin:15 15 15 15;
+    background-color: black;
+    color: #ffffff;
+}
+
+.activity-indicator
+{
+    vertical-align: center;
+    horizontal-align: center;
+    background-color: #FFE06A;
+    padding: 10;
+    border-radius: 5;
+    box-shadow: #888888;
+}
+
+.fab {
+    width: 40;
+    height: 40;
+    horizontal-align: right;
+    margin: 20;
+}
+
+.fabContainer
+{
+    vertical-align: bottom;
+    horizontal-align: right;
+
+}
+.fabContainer2
+{
+    vertical-align: bottom;
+    horizontal-align: left;
+
+}
+.fabContainer3
+{
+    height: 20;
+    vertical-align: bottom;
+    background-color: white;
+    padding: 10;
+
+}
+.sideDrawerHeader {
+    background-color: #FAC950;
+    padding: 16 0 16 0;
+    margin-bottom: 8;
+}
+
+.sideDrawerProfilePictureContainer {
+    margin-bottom: 16;
+    horizontal-align: center;
+}
+
+.sideDrawerLabel {
+    horizontal-align: center;
+    color: white;
+}
+
+.profilePicture {
+    horizontal-align: center;
+    vertical-align: center;
+}
+.itemContainer {
+    padding: 16;
+}
+
+.itemContainer-selected {
+    padding: 16;
+    background-color: #FDEFCA;
+}
+
+.menuSeparator {
+    height: 1;
+    background-color: #EFE9DC;
+}
+
+.menuButton {
+    padding: 16;
+}
+
+.menuButtonContent {
+    vertical-align: center;
+}
+
+.detailsIcon {
+    margin-right: 8;
+    vertical-align: center;
+}
+.picturePreview {
+    width: 50;
+    border-radius: 4;
+    horizontal-align: center;
+    vertical-align: center;
+}
+.title {
+    font-size: 15;
+    horizontal-align: center;
+    color: #FAC950;
+    margin: 10;
+}
+
+
+.registrationMessage {
+    font-size: 15;
+    margin: 5;
+    color: white;
+    horizontal-align: center;
+}
+
+.registrationButton {
+    background-color: #FAC950;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15;
+    display: block;
+    margin: auto;
+    padding: 10;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+}
+.red{
+    background-color: orangered;
+}
+.green{
+    background-color: green;
+}
+
+.detailsContainer {
+    padding: 16 16 16 20;
+    background-color: orangered;
+}
+
+.detailsIcon {
+    margin-right: 8;
+    vertical-align: center;
+}
+
+.newtext {
+    margin-right: 8;
+    vertical-align: center;
+    color: white;
+}
+.picturePreview {
+    width: 50;
+    horizontal-align: center;
+    vertical-align: center;
+}

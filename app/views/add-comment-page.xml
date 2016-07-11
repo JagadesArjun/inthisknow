@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo" actionBarHidden="true">
+    <GridLayout rows="auto,auto,auto, *">
+        <GridLayout cssClass="header-container" columns="auto, *, auto">
+            <Image src="~/res/back.png" tap="backButtonClicked" cssClass="header-button align-left android"/>
+            <Label text="Comment" cssClass="header-context-label align-left android" col="1"/>
+        </GridLayout>
+        <TextView text="{{ commentText }}" id="add-comment-text" row="2" textWrap="true" height="100"
+                  cssClass="text-input"/>
+        <AbsoluteLayout cssClass="fabContainer android" rowSpan="4">
+            <Image src="~/res/done.png" stretch="fill" id="test-element" tap="addComment" cssClass="fab"/>
+        </AbsoluteLayout>
+        <ActivityIndicator rowSpan="4" busy="{{ isLoading }}" cssClass="activity-indicator"/>
+    </GridLayout>
+</Page>

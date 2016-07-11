@@ -1,0 +1,47 @@
+.activity-avatar {
+    width: 50;
+    height: 50;
+    margin: 20 15;
+    border-radius: 4;
+}
+.activity-tile{
+    border-color: green;
+    border-width: 1;
+    border-radius: 4;
+}
+.activity-user {
+    color: white;
+    font-size: 12;
+    vertical-align: center;
+}
+
+.margin-right {
+    margin:0 20 0 0
+}
+
+.margin {
+    margin: 20
+}
+
+.activity-text {
+    margin: 30;
+    font-size: 14;
+    color: green;
+}
+
+.comment-text {
+    font-size: 13;
+}
+
+.comment-name {
+    color: green;
+    font-size: 13;
+}
+.activity-date{
+    font-size: 10;
+    color: #4c4c4c;
+}
+.activity-tile-head{
+    padding: 5;
+    background-color: white;
+}

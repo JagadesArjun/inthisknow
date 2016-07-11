@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" actionBarHidden="true">
+	<GridLayout rows="auto, auto, *">
+		<GridLayout cssClass="header-container" columns="auto, *, auto">
+			<Image src="~/res/logo_one.png" tap="logout" cssClass="header-button align-left android"/>
+			<Image src="~/res/logout_new.png" tap="logout" cssClass="header-button align-right android"/>
+			<Label text="Settings" cssClass="header-context-label align-right android" col="2"/>
+		</GridLayout>
+		<StackLayout row="1">
+			<Label text="{{headerText}}" cssClass="title" textWrap="true"/>
+			<Label text="{{registrationMessage}}" cssClass="registrationMessage" textWrap="true"/>
+			<ActivityIndicator col="2" busy="{{ isLoading }}" horizontalAlignment="center" />
+			<Button text="{{buttonText}}" tap="{{registrationTapAction}}" cssClass="registrationButton"/>
+			<Label text="{{pushMessage}}" cssClass="pushMessage" textWrap="true"/>
+		</StackLayout>
+	</GridLayout>
+</Page>

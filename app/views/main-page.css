@@ -1,0 +1,22 @@
+.app-logo
+{
+    margin-top: 70;
+    width: 100;
+    vertical-align:center;
+}
+
+.sub-title {
+    horizontal-align: center;
+    margin:40 5 5 5;
+    font-size: 13;
+}
+
+.we{
+    horizontal-align: center;
+    margin:20 5 5 5;
+    font-size: 15;
+    font-weight: bold;
+    color: #FFE06A;
+}
+
+

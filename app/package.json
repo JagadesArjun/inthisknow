@@ -1,0 +1,27 @@
+{
+  "name": "Friends",
+  "main": "app.js",
+  "version": "1.0.0",
+  "author": "kibi dev",
+  "description": "Friends",
+  "license": "BSD",
+  "keywords": [
+	"telerik",
+	"platform",
+	"mobile",
+	"nativescript",
+	"{N}",
+	"tns",
+	"appbuilder",
+	"template",
+	"push"
+  ],
+  "repository": {
+	"type": "git",
+	"url": "git@github.com:NativeScript/sample-push-plugin.git"
+  },
+  "bugs": {
+	"url": "https://github.com/NativeScript/sample-push-plugin/issues"
+  },
+  "homepage": "https://github.com/NativeScript/sample-push-plugin"
+}
