@@ -1,4 +1,6 @@
 platforms/
+node_modules/
+.idea/
 .ab
 *.apk
 *.ipa
