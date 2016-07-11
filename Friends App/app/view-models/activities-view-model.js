@@ -138,7 +138,7 @@ var ActivitiesViewModel = (function (_super) {
                       "TargetTypeName":"System.Files"
                    }
                 };
-                var el = new Everlive('cxjk07vtdea065wt');
+                var el = new Everlive('');
                 var data = el.data('Activities');
                 var query = new Everlive.Query();
                 query.orderDesc('CreatedAt');
@@ -181,7 +181,7 @@ var ActivitiesViewModel = (function (_super) {
                         "TargetTypeName":"System.Files"
                     }
                 };
-                var el = new Everlive('cxjk07vtdea065wt');
+                var el = new Everlive('');
                 var data = el.data('Users');
                 var query = new Everlive.Query();
                 var userId = AppSettings.getString(USER_ID);
@@ -219,7 +219,7 @@ var ActivitiesViewModel = (function (_super) {
                         "TargetTypeName":"System.Files"
                     }
                 };
-                var el = new Everlive('cxjk07vtdea065wt');
+                var el = new Everlive('');
                 var data = el.data('Users');
                 var query = new Everlive.Query();
                 query.order('DisplayName');

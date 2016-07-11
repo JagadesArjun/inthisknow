@@ -47,7 +47,7 @@ var addCommentViewModel = (function (_super) {
          
     addCommentViewModel.prototype.addComment = function () {
         var userId = AppSettings.getString(USER_ID);
-        var el = new Everlive('cxjk07vtdea065wt');
+        var el = new Everlive('');
         var data = el.data('Comments');
         var that = this;
         var data2 = el.data('Activities');

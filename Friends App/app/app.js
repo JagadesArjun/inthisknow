@@ -3,7 +3,7 @@ var application = require("application");
 /*
  * Define constants which we will use across the application
  */
-global.BS_API_KEY = "cxjk07vtdea065wt";
+global.BS_API_KEY = "";
 global.BS_SCHEME = "http";
 global.BS_URL = "";
 global.TOKEN_DATA_KEY = "authenticationToken";

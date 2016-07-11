@@ -17,7 +17,7 @@ var MainViewModel = (function (_super) {
         var self = this;
 
         self.everlive = new Everlive({
-            apiKey: 'cxjk07vtdea065wt',
+            apiKey: '',
             scheme: 'http'
         });
 

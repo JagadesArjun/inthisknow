@@ -40,7 +40,7 @@ var Service = (function () {
     Service.prototype.createEverlive = function () {
         if (!this._everlive) {
             this._everlive = new Everlive({
-                apiKey: "cxjk07vtdea065wt",
+                apiKey: "",
                 token: AppSettings.getString(TOKEN_DATA_KEY)
             });
         }

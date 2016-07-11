@@ -80,7 +80,7 @@ var ActivityViewModel = (function (_super) {
             var that = this;
 
             if (!this._commentsPromise){
-                var el = new Everlive('cxjk07vtdea065wt');
+                var el = new Everlive('');
                 var commentsData = el.data('Comments');
             
             var query = new Everlive.Query();
@@ -156,7 +156,7 @@ var ActivityViewModel = (function (_super) {
         var that = this;
         
         return new Promise(function (resolve, reject) {
-            var el = new Everlive('cxjk07vtdea065wt');
+            var el = new Everlive('');
             var activities = el.data('Activities');
             
             activities.destroySingle({ Id: that._activity.Id },

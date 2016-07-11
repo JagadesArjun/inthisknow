@@ -22,7 +22,7 @@ var AddActivityViewModel = (function (_super) {
 
     AddActivityViewModel.prototype.addActivity = function () {
         var userId = AppSettings.getString(USER_ID);
-        var el = new Everlive('cxjk07vtdea065wt');
+        var el = new Everlive('');
         var data = el.data('Activities');
         var that = this;
         var _this = this;
